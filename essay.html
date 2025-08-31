@@ -13,7 +13,7 @@
   <body>
 	  <script src="/config.js"></script>
     <div class="h1 text-center">
-	    ESSAY PAGE
+	    <script>document.write(config.title);</script>
     </div>
     <div class="container">
 	    <div class="row align-items-start">
@@ -32,9 +32,15 @@
 		    <div class="col-sm"></div>
 	    </div>
 	    <div class="row align-items-center lead text-center">
-	    
 		    <div classs="col-12">
-			    <script>document.write(config.quote);</script>
+			    <figure class="text-center">
+				    <blockquote class="blockquote">
+					    <p><script>document.write(config.quote);</script></p>
+				    </blockquote>
+				    <figcaption class="blockquote-footer">
+					    The Dentist.
+				    </figcaption>
+			    </figure>
 		    </div>
 
 	    </div>
