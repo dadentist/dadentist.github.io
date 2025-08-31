@@ -13,7 +13,7 @@
   <body>
 	  <script src="/config.js"></script>
 	  <script>
-		  const c = new conf();
+		  const c = Object.keys(conf);
 	  </script>
     <div class="h1 text-center">
 	    ESSAY PAGE
@@ -23,7 +23,7 @@
 		    <div class="col-sm"></div>
 		    <div class="col-sm"></div>
 		    <div class="col-sm">
-			    <img class="img-thumbnail" src=c.symbol></img>
+			    <img class="img-thumbnail" src=c['symbol']></img>
 		    </div>
 		    <div class="col-sm"></div>
 		    <div class="col-sm"></div>

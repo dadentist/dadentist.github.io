@@ -1,10 +1,10 @@
 
 
 
-const conf = function(){
-	const symbol = "/symbol.jpg";
-	const quote = "Quote";
-	const title = "TITLE ?";
+const conf = {
+	symbol : "/symbol.jpg",
+	quote : "Quote",
+	title : "TITLE ?";
 };
 
 
