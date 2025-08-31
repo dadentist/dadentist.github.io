@@ -1,6 +1,4 @@
 
-
-
 const config = {
 	symbol: "/symbol.jpg",
 	quote: "Quote",
