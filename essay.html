@@ -38,7 +38,7 @@
 					    <p><script>document.write(config.quote);</script></p>
 				    </blockquote>
 				    <figcaption class="blockquote-footer">
-					    <script>document.write(config.authorName + "&nbsp;" + getEssay(getPage(window.location.href)));</script>
+					    <script>document.write(config.authorName));</script>
 				    </figcaption>
 			    </figure>
 		    </div>
@@ -50,6 +50,18 @@
 		    <div class="col-3"></div>
 		    <div class="col-6 text-center">
 			    <div class="container">
+				    <script>
+
+					    getEssay(getPage(window.location.href), function(data){
+
+						    console.log(data);
+
+
+					    } );
+
+				    </script>
+
+
 				    <div class="row align-items-start text-sm-start">
 					    
 					    A FEW COLUMNS WITH DIFFERENT DETAILS ABOUT THE TEXT IN THE ROW BELOW: AUTHOR, DATE AND TIME.. GIVE THE ENTIRE ROW SOME INTRIGUING BACKGROUND COLOR. THE FIRST COLUMN WILL CONTAIN THE INDENTIFING PERSONAL SYMBOL, OR PICTURE OF THE AUTHOR.

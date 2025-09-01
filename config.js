@@ -9,16 +9,14 @@ const config = {
 };
 
 
-const getEssay = function(id) {
+const getEssay = function(id, callback) {
 	// Load/read the essays.json
 	// Pass the ID of the essay you want to get as a parameter
 	//Return an Array with all the essay's data, including the essay itself
 	
-	const json = fetch('/essays.json')
-		.then((response) => { response.json().then( (data) => { return data; } ) } )
+	:fetch('/essays.json')
+		.then((response) => { response.json().then( (data) => { callback(data); } ) } )
 		.catch( (err) => { console.log(err); } );
-
-	return json;
 }
 
 // window.location.href is passed as parameter
