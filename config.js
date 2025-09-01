@@ -20,7 +20,10 @@ const getEssay = function(id) {
 const getPage = function(loc) {
 	const url=loc.href;
 	const cleanURL = location.href.replace('https://', '');
-	const page = cleanURL.split('/')[1].split('?')[1].split('=')[1];
+	const parts = cleanURL.split('/')[1]
+	const _get = parts.split('?')[1];
+	if (_get == undefined) return '&nbsp;';
+	const page = _get.split('=')[1];
 	return (page == undefined ? '&nbsp;' : page);
 }
 
