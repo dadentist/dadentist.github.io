@@ -53,9 +53,6 @@
 				    <script>
 
 					    const pageID = getPage(window.location.href);
-					    
-					    console.log(pageID);
-
 					    getEssay(pageID, function(data) {
 						    if (pageID == undefined){
 							    // THE PAGE WAS NOT FOUND
@@ -63,8 +60,6 @@
 						    }
 
 						    const page = data[pageID];
-						   
-						    console.log(page);
 
 						    const essayAuthor = page.author;
 						    const essayDate = page.date;
@@ -72,18 +67,24 @@
 						    const essayTitle = page.title;
 						    const essayContent = page.content;
 
-						    console.log(
-							    essayAuthor + essayDate + essayTime + essayTitle + essayContent
-						    );
-
+						    document.getElementById('authorPsudeonym').innerHTML = essayAuthor;
+						    document.getElementById('essayDate').innerHTML = essayDate;
 					    });
 
 				    </script>
 
 
 				    <div class="row align-items-start text-sm-start">
+
+					    <div class="col-sm">
+					    <p id="authorSymbol"></p>
+					    <p id="authorPsudeonym"></p>
+					    <p id="essayDate"></p>
 					    
 					    A FEW COLUMNS WITH DIFFERENT DETAILS ABOUT THE TEXT IN THE ROW BELOW: AUTHOR, DATE AND TIME.. GIVE THE ENTIRE ROW SOME INTRIGUING BACKGROUND COLOR. THE FIRST COLUMN WILL CONTAIN THE INDENTIFING PERSONAL SYMBOL, OR PICTURE OF THE AUTHOR.
+
+
+					    </div>
 				    </div>
 				    <div class="row align-items-center">
 					    <div class="col-6 text-break fs-6">
