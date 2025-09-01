@@ -24,6 +24,9 @@ const getPage = function(loc) {
 	const _get = parts.split('?')[1];
 	if (_get == undefined) return '&nbsp;';
 	const page = _get.split('=')[1];
+	const regexp = new RegExp('/^[0-9]+$/');
+	const isNum = regexp.test(page);
+	if (isNum == undefined || isNum == false) return '&nbsp;';
 	return (page == undefined ? '&nbsp;' : page);
 }
 
