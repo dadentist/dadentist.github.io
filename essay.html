@@ -53,6 +53,9 @@
 				    <script>
 
 					    const pageID = getPage(window.location.href);
+					    
+					    console.log(pageID);
+
 					    getEssay(pageID, function(data) {
 						    if (pageID == undefined){
 							    // THE PAGE WAS NOT FOUND
@@ -60,7 +63,9 @@
 						    }
 
 						    const page = data[pageID];
-						    
+						   
+						    console.log(page);
+
 						    const essayAuthor = page.author;
 						    const essayDate = page.date;
 						    const essayTime = page.time;
