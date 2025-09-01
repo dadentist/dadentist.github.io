@@ -14,7 +14,7 @@ const getEssay = function(id, callback) {
 	// Pass the ID of the essay you want to get as a parameter
 	//Return an Array with all the essay's data, including the essay itself
 	
-	:fetch('/essays.json')
+	fetch('/essays.json')
 		.then((response) => { response.json().then( (data) => { callback(data); } ) } )
 		.catch( (err) => { console.log(err); } );
 }
