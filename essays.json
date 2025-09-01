@@ -1,4 +1,4 @@
 {
-	"1" : "ESSAY #1",
-	"2" : "ESSAY #2",
+	"1" : { "title": "", "author": "", "date": "", "time": "", "conent": "" },
+	"2" : { "title": "", "author": "", "date": "", "time": "", "conent": "" }
 }
