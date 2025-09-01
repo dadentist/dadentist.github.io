@@ -19,14 +19,16 @@
 	    <div class="row align-items-start">
 		    <div class="col-sm"></div>
 		    <div class="col-sm"></div>
-		    <div class="col-sm" id="symbol">
+		    <div class="col-sm">
+			    <p id="symbol">
 			    <script>
 				    const img = document.createElement('img');
-				    img.class="img-thumbnail";
+				    img.className="img-fluid img-thumbnail";
 				    img.src=config.symbol;
 				    img.alt=config.symbolAlt;
 				    document.getElementById("symbol").appendChild(img);
 			    </script>
+			    </p>
 		    </div>
 		    <div class="col-sm"></div>
 		    <div class="col-sm"></div>
