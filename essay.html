@@ -52,7 +52,26 @@
 			    <div class="container">
 				    <script>
 
-					    getEssay(getPage(window.location.href), function(data) {console.log(data)});
+					    const pageID = getPage(window.location.href);
+					    getEssay(pageID, function(data) {
+						    if (pageID == undefined){
+							    // THE PAGE WAS NOT FOUND
+							    return;
+						    }
+
+						    const page = data[pageID];
+						    
+						    const essayAuthor = page.author;
+						    const essayDate = page.date;
+						    const essayTime = page.time;
+						    const essayTitle = page.title;
+						    const essayContent = page.content;
+
+						    console.log(
+							    essayAuthor + essayDate + essayTime + essayTitle + essayContent
+						    );
+
+					    });
 
 				    </script>
 
