@@ -67,7 +67,6 @@
 						    const essayDate = page.date;
 						    const essayTime = page.time;
 						    const essayTitle = page.title;
-						    const essayContent = page.content;
 
 						    document.getElementById('authorPsudeonym').innerHTML = essayAuthor;
 						    document.getElementById('essayDate').innerHTML = essayDate;
@@ -88,7 +87,22 @@
 				    </div>
 				    <div class="row align-items-center">
 					    <div class="col-6 text-break fs-6">
-						    TEXT&nbsp;TEXT&nbsp;TEXT.
+						    <script>
+						    getEssay(pageID, function(data) {
+                                                    if (pageID == undefined){
+                                                            // THE PAGE WAS NOT FOUND
+                                                            return;
+                                                    }
+
+                                                    const page = data[pageID];
+
+                                                    const essayContent = page.content;
+
+                                                    document.getElementById('essayContent').innerHTML = essayContent;
+                                            });
+						    </script>
+						    <p id="essayContent">
+
 					    </div>
 				    </div>
 			    </div>
