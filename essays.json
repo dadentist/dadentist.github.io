@@ -1,5 +1,5 @@
 {
-	"edu" : { "title : "", author : "", date : "", "time" : "", "content" : " A&nbsp;LIST&nbsp;OF&nbsp;BOOKS&nbsp;THAT&nbsp;EXPLAINS&nbsp;THE&nbsp;DOCTRINE&nbsp;BEHIND&nbsp;THE&nbsp;WEBSITE." },
+	"edu" : { "title" : "", "author" : "", "date" : "", "time" : "", "content" : " A&nbsp;LIST&nbsp;OF&nbsp;BOOKS&nbsp;THAT&nbsp;EXPLAINS&nbsp;THE&nbsp;DOCTRINE&nbsp;BEHIND&nbsp;THE&nbsp;WEBSITE." },
 	"1" : { "title": "TITLE", "author": "The Dentist", "date": "01/09/2025", "time": "00:00", "content": "ESSAY&nbsp;ESSAY<br>ESSAY&nbsp;ESSAY" },
 	"2" : { "title": "", "author": "", "date": "", "time": "", "content": "" }
 }
